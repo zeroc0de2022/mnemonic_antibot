@@ -23,5 +23,4 @@ $dtoken = html_entity_decode($token[1]);
 // Отправление токена вторым запросом
 $settings['post'] = "token={$dtoken}&submit=send";
 $response = $curl->request($settings);
-print_r($settings);
 print_r($response['body']);
