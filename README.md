@@ -69,9 +69,9 @@ MneMonica::getHash();
 
 ```php
 if (isset($_POST['submit'], $_POST['token'])) {
-echo (MneMonica::checkHash($_POST['token']))
-? '<h1>Человек</h1>'
-: '<h1>Бот</h1>';
+   echo (MneMonica::checkHash($_POST['token']))
+      ? '<h1>Человек</h1>'
+      : '<h1>Бот</h1>';
 }
 ```
 ---
